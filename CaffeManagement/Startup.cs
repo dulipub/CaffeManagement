@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using CaffeManagementCore;
 
 namespace CaffeManagement
 {
@@ -33,6 +35,8 @@ namespace CaffeManagement
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddDbContext<CaffeContext>(options => 
+                    options.UseNpgsql(Configuration.GetConnectionString("CaffeConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
