@@ -14,5 +14,6 @@ namespace CaffeManagementCore.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime Created { get; set; }
         public Location Address { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

@@ -10,5 +10,6 @@ namespace CaffeManagementCore.Models
         public string Name { get; set; }
         public float UnitBasePrice { get; set; }
         public ProductTypes Type { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

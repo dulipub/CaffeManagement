@@ -10,6 +10,6 @@ namespace CaffeManagementCore.Models
 
         public Store Store { get; set; }
 
-        public virtual ICollection<OrderItem> StoredItems { get; set; }
+        public virtual ICollection<InventoryItem> StoredItems { get; set; }
     }
 }
