@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CaffeManagementCore.Models
 {
-    public class InventoryItem : BaseEntity
+    public class InventoryItem : BaseEntity,IAggreagateRoot
     {
         public Product Product { get; set; }
         public int Quantity { get; set; }

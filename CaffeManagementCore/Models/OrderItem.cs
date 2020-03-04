@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CaffeManagementCore.Models
 {
-    public class OrderItem :BaseEntity
+    public class OrderItem :BaseEntity,IAggreagateRoot
     {
         public Product Product { get; set; }
         public int Quantity { get; set; }

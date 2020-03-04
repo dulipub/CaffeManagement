@@ -7,10 +7,10 @@ using System.Text;
 
 namespace CaffeManagementCore.Models
 {
-    public class Customer : BaseEntity
+    public class Customer : BaseEntity,IAggreagateRoot
     {
         public string Name { get; set; }
-        public int ContactNumber { get; set; }
+        public string ContactNumber { get; set; }
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime Created { get; set; }
         public Location Address { get; set; }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CaffeManagementCore.Models
 {
-    public class Product : BaseEntity
+    public class Product : BaseEntity,IAggreagateRoot
     {
         public string Name { get; set; }
         public float UnitBasePrice { get; set; }

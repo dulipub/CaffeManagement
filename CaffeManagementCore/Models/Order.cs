@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CaffeManagementCore.Models
 {
-    public class Order : BaseEntity
+    public class Order : BaseEntity,IAggreagateRoot
     {
         public DateTime Created { get; set; }
         public DateTime? Completed { get; set; }

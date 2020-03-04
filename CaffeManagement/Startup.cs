@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using CaffeManagementCore;
+using CaffeManagementCore.IServices;
+using CaffeManagementServices.Services;
 
 namespace CaffeManagement
 {
@@ -35,6 +37,7 @@ namespace CaffeManagement
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddScoped<ICustomerService, CustomerService>();
             services.AddDbContext<CaffeContext>(options => 
                     options.UseNpgsql(Configuration.GetConnectionString("CaffeConnection")));
         }

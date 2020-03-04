@@ -3,15 +3,17 @@ using System;
 using CaffeManagementCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace CaffeManagementCore.Migrations
 {
     [DbContext(typeof(CaffeContext))]
-    partial class CaffeContextModelSnapshot : ModelSnapshot
+    [Migration("20200304014929_schema-refactored-2020-03-04")]
+    partial class schemarefactored20200304
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

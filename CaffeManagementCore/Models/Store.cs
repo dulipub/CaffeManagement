@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CaffeManagementCore.Models
 {
-    public class Store : BaseEntity
+    public class Store : BaseEntity,IAggreagateRoot
     {
         public string Name { get; set; }
         public Location Address { get; set; }
