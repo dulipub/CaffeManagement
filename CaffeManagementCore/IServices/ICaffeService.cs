@@ -14,7 +14,7 @@ namespace CaffeManagementCore.IServices
         void Delete(TEntity entity);
         void Update(TEntity entity);
 
-        TEntity GetEntity(int id);
+        TEntity GetEntity(Guid id);
         IQueryable<TEntity> GetAll();
     }
 }

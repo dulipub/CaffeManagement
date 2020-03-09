@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CaffeManagement.Models.Customer
 {
-    public class CustomerViewModel
+    public class GetCustomerViewModel
     {
         public Guid Id { get; set; }
 
@@ -15,6 +15,16 @@ namespace CaffeManagement.Models.Customer
 
         public string ImageUrl { get; set; }
 
+        public string Address { get; set; }
+
         public string City { get; set; }
+
+        public string State { get; set; }
+
+        public double? Longitude { get; set; }
+
+        public double? Latitude { get; set; }
+
+        public string Landmarks { get; set; }
     }
 }

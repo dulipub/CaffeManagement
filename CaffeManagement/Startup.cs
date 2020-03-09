@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using CaffeManagementCore;
 using CaffeManagementCore.IServices;
 using CaffeManagementServices.Services;
+using AutoMapper;
 
 namespace CaffeManagement
 {
@@ -35,7 +36,7 @@ namespace CaffeManagement
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddAutoMapper(typeof(Startup));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddScoped<ICustomerService, CustomerService>();
             services.AddDbContext<CaffeContext>(options => 

@@ -23,7 +23,7 @@
 @foreach (var item in Model.Customers) {
         <tr>
             <td><img src="@item.ImageUrl" /></td>
-            <td>@item.Id</td>
+            <td><a href="customers/customer/@item.Id">@item.Id</a></td>
             <td>@item.Name</td>
             <td>@item.City</td>
             <td>@item.ContactNumber</td>

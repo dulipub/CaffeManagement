@@ -7,6 +7,6 @@ namespace CaffeManagement.Models.Customer
 {
     public class CustomerIndexModel
     {
-        public ICollection<CustomerViewModel> Customers { get; set; }
+        public ICollection<GetCustomerViewModel> Customers { get; set; }
     }
 }

@@ -35,7 +35,7 @@ namespace CaffeManagementServices.Services
             return _context.Set<TEntity>().AsQueryable();
         }
 
-        public virtual TEntity GetEntity(int id)
+        public virtual TEntity GetEntity(Guid id)
         {
             return _context.Find<TEntity>(id);
         }
