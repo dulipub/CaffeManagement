@@ -3,15 +3,17 @@ using System;
 using CaffeManagementCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace CaffeManagementCore.Migrations
 {
     [DbContext(typeof(CaffeContext))]
-    partial class CaffeContextModelSnapshot : ModelSnapshot
+    [Migration("20200309082138_location-entity-updated")]
+    partial class locationentityupdated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

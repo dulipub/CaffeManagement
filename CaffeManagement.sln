@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaffeManagement", "CaffeMan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaffeManagementCore", "CaffeManagementCore\CaffeManagementCore.csproj", "{10E0C3E2-EE67-4145-81A2-91D3DD9DE3C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaffeManagementServices", "CaffeManagementServices\CaffeManagementServices.csproj", "{678D666D-BD3A-4F51-B085-75C6B7094CD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaffeManagementServices", "CaffeManagementServices\CaffeManagementServices.csproj", "{678D666D-BD3A-4F51-B085-75C6B7094CD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaffeeManagementAPI", "CaffeeManagementAPI\CaffeeManagementAPI.csproj", "{C9B98115-C71A-4F70-855D-3369EA9B3BD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{678D666D-BD3A-4F51-B085-75C6B7094CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{678D666D-BD3A-4F51-B085-75C6B7094CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{678D666D-BD3A-4F51-B085-75C6B7094CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B98115-C71A-4F70-855D-3369EA9B3BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B98115-C71A-4F70-855D-3369EA9B3BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B98115-C71A-4F70-855D-3369EA9B3BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B98115-C71A-4F70-855D-3369EA9B3BD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

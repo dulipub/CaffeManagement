@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CaffeManagement.Models.Customer
+namespace CaffeeManagementAPI.Models.Customer
 {
-    public class GetCustomerViewModel
+    public class CreateCustomer
     {
-        public Guid Id { get; set; }
-
         public string Name { get; set; }
 
         public string ContactNumber { get; set; }

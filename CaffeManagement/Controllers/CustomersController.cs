@@ -39,5 +39,10 @@ namespace CaffeManagement.Controllers
             ViewBag.cusid = customer.Id.ToString();
             return View();
         }
+
+        public void Create(CreateCustomerViewModel model)
+        {
+
+        }
     }
 }

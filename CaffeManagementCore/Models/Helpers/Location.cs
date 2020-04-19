@@ -7,7 +7,7 @@ namespace CaffeManagementCore.Models.Helpers
 {
     public class Location : BaseEntity,IAggreagateRoot
     {
-        public string Address { get; set; }
+        public string Street { get; set; }
         public string City { get; set; }
         public string State { get; set; }
         public double? Latitude { get; set; }
